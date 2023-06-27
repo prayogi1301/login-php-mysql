@@ -1,6 +1,4 @@
 <?php 
-session_start();
-
 //atur koneksi ke database
 $host_db    = "localhost";
 $user_db    = "root";
@@ -11,6 +9,7 @@ $koneksi    = mysqli_connect($host_db,$user_db,$pass_db,$nama_db);
 $err        = "";
 $username   = "";
 $ingataku   = "";
+
 
 if(isset($_COOKIE['cookie_username'])){
     $cookie_username = $_COOKIE['cookie_username'];
